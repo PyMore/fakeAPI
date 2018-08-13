@@ -4,7 +4,7 @@ from django.db import models
 class Services(models.Model):
     """ Services Model """
 
-    QUESTION_TYPE = (
+    METHOD_TYPE = (
         ('get','GET'),
         ('post','POST'),
         ('delete', 'DELETE'),
@@ -19,7 +19,7 @@ class Services(models.Model):
     status = models.IntegerField (blank=False, null=False)
         
     type = models.CharField(max_length=8,
-        choices=QUESTION_TYPE, null=False, blank=False)
+        choices=METHOD_TYPE, null=False, blank=False)
     active = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)

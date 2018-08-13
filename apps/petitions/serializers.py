@@ -6,5 +6,5 @@ class ServicesSerializer(serializers.ModelSerializer):
     """ Services Serializer """
 
     class Meta:
-        model = serializers
+        model = Services
         fields = '__all__'

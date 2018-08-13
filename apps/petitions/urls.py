@@ -3,5 +3,5 @@ from django.urls import path , include
 from .views import ServiceAPIView
 
 urlpatterns = [
-    path('data/', ServiceAPIView.as_view()),
+    path('fake/<slug:name>', ServiceAPIView.as_view()),
 ]
