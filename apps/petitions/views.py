@@ -53,7 +53,7 @@ class ServiceAPIView(APIView):
         if service.type == option:
             print(type(service.requests))
             requestJson = {}
-            requestJson['data'] = json.loads(service.requests)
+            requestJson['data'] = json.loads(service.response)
             requestJson['status'] = service.status
             return requestJson
         else:
