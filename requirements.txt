@@ -5,3 +5,4 @@ Markdown==2.6.11
 gunicorn==19.9.0
 psycopg2==2.7.5
 django-cors-headers==2.4.0
+whitenoise==4.0
