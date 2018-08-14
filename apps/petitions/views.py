@@ -44,7 +44,6 @@ class ServiceAPIView(APIView):
         except Services.DoesNotExist:
             service = None
 
-        print(service)
 
         if service is None:
             obj ={"data": "Not found"}
