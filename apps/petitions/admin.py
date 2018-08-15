@@ -2,7 +2,8 @@ from django.contrib import admin
 from .models import Services
 # Register your models here.
 
+
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
     '''Admin View for Services'''
-    pass
+    list_display =('name','status','type')
