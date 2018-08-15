@@ -121,8 +121,12 @@ WSGI_APPLICATION = 'fakeAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'ddveret3u6r0r7',
+        'USER': 'ppyjtuknjawxff',
+        'PASSWORD': '07f38f784b73e3755f854f6b1d7b9e5eeb3878d23be400478b3b166439b367b2',
+        'HOST': 'ec2-54-83-13-119.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
