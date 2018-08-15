@@ -6,4 +6,4 @@ from .models import Services
 @admin.register(Services)
 class ServicesAdmin(admin.ModelAdmin):
     '''Admin View for Services'''
-    list_display =('name','status','type')
+    list_display =('name','description','status','type')

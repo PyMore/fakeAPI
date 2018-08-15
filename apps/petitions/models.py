@@ -14,6 +14,7 @@ class Services(models.Model):
 
     name = models.CharField(max_length=30,blank=False, null=False)
     params = models.CharField(max_length=120,blank=True, null=True)
+    description = models.TextField(blank=False,null=False)
     requests = models.TextField(blank=True, null=True)
     response = models.TextField(blank=True, null=True)
     status = models.IntegerField (blank=False, null=False)
